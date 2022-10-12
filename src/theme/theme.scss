@@ -1,0 +1,35 @@
+#root {
+    height: 100vh;
+
+    &.LIGHT {
+        --white: white;
+        --bg-body: white;
+        --crs: black;
+        --text: black;
+        --button-theme: rgb(231, 149, 94);
+        --button-lang: rgb(87, 74, 35);
+        --option-lang-hover: #f3a9a2;
+        --bg-footer: rgb(14, 13, 13);
+        --fb: #1890ff;
+        --youtube: red;
+        --bg-copy-right: #484644;
+        --orange-bg: rgb(247, 243, 241);
+        --text-active: orange;
+    }
+
+    &.DARK {
+        --white: white;
+        --bg-body: rgb(118, 118, 118);
+        --crs: blue;
+        --text: white;
+        --button-theme: rgb(87, 74, 35);
+        --button-lang: rgb(231, 149, 94);
+        --option-lang-hover: #f3a9a2;
+        --bg-footer: rgb(230, 117, 69);
+        --fb: #1890ff;
+        --youtube: red;
+        --bg-copy-right: #ff8000;
+        --orange-bg: rgb(242, 117, 45);
+        --text-active: orange;
+    }
+}

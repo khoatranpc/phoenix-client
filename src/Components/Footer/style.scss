@@ -1,0 +1,99 @@
+div.container-footer{
+
+    div.footer-page {
+        padding: 40px 10%;
+        background-color: var(--bg-footer);
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        color: var(--white);
+    
+        h3.title {
+            color: var(--white);
+            text-transform: uppercase;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+    
+        div.item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        a.fb {
+            color: var(--white);
+        }
+    
+        div.right-footer {
+            div.ant-space {
+                display: flex;
+                gap: 10px;
+            }
+    
+            label {
+                cursor: pointer;
+            }
+            a{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    
+        a.yt {
+            color: var(--white);
+        }
+    
+        span.fb,
+        span.yt,
+        span.insta {
+            font-size: 25px;
+            width: fit-content;
+            cursor: pointer;
+            transition: 0.5s;
+            border-radius: 2px;
+        }
+    
+        span.fb {
+            &:hover {
+                background-color: var(--white);
+                font-size: 30px;
+    
+                svg {
+                    fill: var(--fb)
+                }
+            }
+        }
+    
+        span.yt {
+    
+            &:hover {
+                svg {
+                    fill: var(--youtube);
+                }
+    
+                background-color: var(--white);
+                font-size: 30px;
+            }
+        }
+    
+        span.insta {
+    
+            &:hover {
+                svg {
+                    fill: var(--fb);
+                }
+    
+                background-color: var(--white);
+                font-size: 30px;
+            }
+        }
+    }
+    div.copy-right{
+        padding: 20px;
+        background-color: var(--bg-copy-right);
+        color: var(--white);
+        text-align: center;
+    }
+}
