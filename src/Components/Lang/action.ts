@@ -1,7 +1,8 @@
-export const CHANGE_LANG = 'CHANGE_LANG';
-export const handleLang = (payload: string) => {
+import { Action } from "../../Global/interface"
+
+export const switchLang = (payload: Action) => {
     return {
-        type: CHANGE_LANG,
+        type: payload.type,
         payload
     }
 }

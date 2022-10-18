@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import logo from '../../Assets/img/logo.png';
 import './style.scss';
 
-export const ErrPage = () => {
-    const {t} = useTranslation();
+const ErrPage = () => {
+    const { t } = useTranslation();
     return (
         <div className="loading-err-page">
             <div className="logo-loading">
@@ -15,3 +15,4 @@ export const ErrPage = () => {
         </div>
     )
 }
+export default ErrPage;

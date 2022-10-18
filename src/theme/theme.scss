@@ -4,7 +4,7 @@
     &.LIGHT {
         --white: white;
         --bg-body: white;
-        --crs: black;
+        --crs: rgb(246, 223, 223);
         --text: black;
         --button-theme: rgb(231, 149, 94);
         --button-lang: rgb(87, 74, 35);
@@ -15,12 +15,13 @@
         --bg-copy-right: #484644;
         --orange-bg: rgb(247, 243, 241);
         --text-active: orange;
+        --bg-white: rgb(248, 246, 246);
     }
 
     &.DARK {
         --white: white;
         --bg-body: rgb(118, 118, 118);
-        --crs: blue;
+        --crs: rgba(227, 164, 139, 0.623);
         --text: white;
         --button-theme: rgb(87, 74, 35);
         --button-lang: rgb(231, 149, 94);
@@ -30,6 +31,7 @@
         --youtube: red;
         --bg-copy-right: #ff8000;
         --orange-bg: rgb(242, 117, 45);
-        --text-active: orange;
+        --text-active: rgb(0, 0, 0);
+        --bg-white: rgb(242, 117, 45);
     }
 }

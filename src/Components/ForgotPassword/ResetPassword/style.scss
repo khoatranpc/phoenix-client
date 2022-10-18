@@ -1,0 +1,36 @@
+div.invalid-link {
+    flex: 1;
+    padding: 50px 0;
+    text-align: center;
+
+    h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+div.form-reset-password {
+    flex: 1;
+
+    h3 {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    form {
+        div.ant-form-item-control-input-content {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}

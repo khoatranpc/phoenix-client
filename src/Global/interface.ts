@@ -4,13 +4,15 @@ interface User {
     id?: string;
     role?: ROLE;
     name?: string;
+    username?: string;
     email?: string;
     phoneNumber?: string;
 
 }
 export interface Action {
-    payload?: Obj;
     type?: string;
+    payload?: Record<string, unknown> | Obj | null;
+    componentId?: string;
 }
 
 export interface Obj {

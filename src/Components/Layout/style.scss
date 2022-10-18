@@ -1,6 +1,17 @@
 div.page {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--bg-body);
     color: var(--text);
+
+    div.main {
+        padding-top: 100px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
 }

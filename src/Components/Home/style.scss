@@ -1,0 +1,67 @@
+div.container-home {
+    width: 100vw;
+    height: fit-content;
+    flex: 1;
+
+    div.introdution-about-company {
+        min-width: 70%;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        div.img-intro {
+            width: fit-content;
+
+            img {
+                max-width: 500px;
+                min-width: 50%;
+            }
+        }
+    }
+
+    div.intro-subject-phoenix {
+        margin-top: 50px;
+        text-align: center;
+        div.title {
+            h1.title {
+                text-transform: uppercase;
+                text-align: center;
+                margin: 0;
+            }
+        }
+
+        div.intro-subject {
+            background-color: var(--crs);
+            div.subject-item {
+                max-width: 500px;
+                padding: 50px 0;
+                p{
+                    word-wrap: break-word;
+                }
+                img {
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+
+    div.summary-to-studient {
+        width: 100vw;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h1.title {
+            flex: 0.4;
+            text-transform: uppercase;
+        }
+
+        div.process-step {
+            width: fit-content;
+        }
+    }
+}

@@ -1,26 +1,47 @@
 import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import i18next from 'i18next';
 import logo from '../../../Assets/img/logo.png';
-import useStore from '../../../Global/store';
-import { ChangeTheme } from '../../../Components/Theme/action';
+import { LANG_SUCCESS } from '../../../Components/Lang/reducer';
+import { switchLang } from '../../../Components/Lang/action';
+import { LANG, THEME } from '../../../Global/enum';
+import { THEME_SUCCESS } from '../../../Components/Theme/reducer';
+import { changeTheme } from '../../../Components/Theme/action';
 import './style.scss';
 
 export const LoadingPhoenix = () => {
-  const [state, dispatch] = useStore();
-  const currentLang = localStorage.getItem('lang') as string;
+  const dispatch = useDispatch();
+  const currentLang = localStorage.getItem(`${process.env.REACT_APP_DOMAIN}Lang`) as string;
   const currentTheme = localStorage.getItem('theme') as string;
   useEffect(() => {
     if (!currentLang) {
-      localStorage.setItem('lang', state.Lang)
+      dispatch(switchLang({
+        type: LANG_SUCCESS,
+        payload: {
+          current: LANG.VI
+        }
+      }))
+      localStorage.setItem(`${process.env.REACT_APP_DOMAIN}Lang`, LANG.VI);
     } else {
       i18next.changeLanguage(currentLang);
     }
     if (!currentTheme) {
-      localStorage.setItem('theme', state.Theme)
+      dispatch(changeTheme({
+        type: THEME_SUCCESS,
+        payload: {
+          current: THEME.LIGHT
+        }
+      }))
+      localStorage.setItem('theme', THEME.LIGHT)
     } else {
-      dispatch(ChangeTheme(currentTheme))
+      dispatch(changeTheme({
+        type: THEME_SUCCESS,
+        payload: {
+          current: currentTheme
+        }
+      }))
     }
-  }, [currentLang, state.Lang, dispatch, currentTheme, state.Theme])
+  }, [])
   return (
     <div className="loading">
       <div className="logo-loading">

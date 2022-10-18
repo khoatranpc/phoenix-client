@@ -1,0 +1,25 @@
+div.container-register{
+    width: 100%;
+    padding-top: 50px;
+    h3{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: center;
+    }
+    div.form{
+        display: flex;
+        justify-content: center;
+        form{
+            flex: 0.7;
+            div.ant-row.ant-form-item-row{
+                justify-content: center;
+            }
+            div.btn-fnc-account{
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+}

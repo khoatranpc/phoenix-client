@@ -1,32 +1,28 @@
-import { Carousel } from 'antd';
 import React from 'react';
-import { AuthProtect } from '../AuthProtect';
-
-const contentStyle: React.CSSProperties = {
-  height: '160px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: 'var(--crs)',
-};
+import { Carousel } from 'antd';
+import { img1, img2, img3, img4, total } from '../../Assets/img';
+import './style.scss';
 
 const CarouselCPN: React.FC = () => (
-  <AuthProtect>
+  <div className="container-carousel">
     <Carousel autoplay>
-      <div>
-        <h3 style={contentStyle}>1</h3>
+      <div className="img-carousel">
+        <img src={total} alt="phoenix" />
       </div>
-      <div>
-        <h3 style={contentStyle}>2</h3>
+      <div className="img-carousel">
+        <img src={img1} alt="phoenix" />
       </div>
-      <div>
-        <h3 style={contentStyle}>3</h3>
+      <div className="img-carousel">
+        <img src={img2} alt="phoenix" />
       </div>
-      <div>
-        <h3 style={contentStyle}>4</h3>
+      <div className="img-carousel">
+        <img src={img3} alt="phoenix" />
+      </div>
+      <div className="img-carousel">
+        <img src={img4} alt="phoenix" />
       </div>
     </Carousel>
-  </AuthProtect>
+  </div>
 );
 
 export default CarouselCPN;

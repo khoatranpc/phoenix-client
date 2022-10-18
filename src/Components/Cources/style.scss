@@ -1,0 +1,58 @@
+.container-cources {
+    width: 100%;
+    padding: 30px;
+    align-self: flex-start;
+
+    h1.title-page {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .cources {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+            width: 33.33%;
+            padding: 10px;
+
+            .col {
+                padding-bottom: 10px;
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
+                box-shadow: inset;
+                cursor: pointer;
+            }
+
+            .thumbnail {
+                max-width: 100%;
+            }
+
+            .content {
+                padding: 0 15px;
+            }
+
+            .summary {
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .about-timeline {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            hr {
+                border: none;
+                width: 25%;
+                border-bottom: 3px solid black;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
+}

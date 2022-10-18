@@ -1,0 +1,22 @@
+body {
+    /* background-image: url('./Assets//img/partment.jpg'); */
+    background-color: var(--bg-body);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+* {
+    transition: 0.2s;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #0000002b;
+        border-radius: 10px;
+    }
+}

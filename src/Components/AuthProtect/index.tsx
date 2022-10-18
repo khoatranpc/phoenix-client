@@ -9,7 +9,7 @@ export const AuthProtect = (props: AuthProtectProps) => {
     // eslint-disable-next-line
     const [state, dispatch] = useContext(StoreContext);
     if (!state.User) {
-        return <Navigate to={'/auth/login'} />
+        return <Navigate to={'/account/login'} />
     }
     return (
         <>

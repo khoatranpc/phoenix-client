@@ -1,7 +1,8 @@
 export enum ROLE {
-    USER = "USER",
-    ADMIN = "ADMIN",
-    TEACH = "TEACH"
+    USER = 'USER',
+    ADMIN = 'ADMIN',
+    TEACH = 'TEACH',
+    CUSTOMER = "CUSTOMER"
 }
 export enum LANG {
     VI = 'vi',

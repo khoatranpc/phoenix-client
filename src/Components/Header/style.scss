@@ -1,9 +1,14 @@
 div.header-body {
     width: 100%;
     height: 100px;
+    position: fixed;
+    z-index: 16;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--text);
+    background-color: var(--bg-white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     div.logo {
         img {
@@ -25,7 +30,8 @@ div.header-body {
         a {
             color: var(--text);
         }
-        a.active{
+
+        a.active {
             color: var(--text-active);
             font-weight: bold;
             text-decoration: underline;

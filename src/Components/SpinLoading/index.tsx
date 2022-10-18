@@ -5,10 +5,10 @@ import './style.scss';
 export const SpinLoading = () => {
   return (
     <div className="spinner">
-    <div className="logo-loading">
-      <img src={logo} alt="Phoenix" />
-      <div className="spinner"></div>
+      <div className="logo-loading">
+        <img src={logo} alt="Phoenix" />
+        <div className="spinner"></div>
+      </div>
     </div>
-  </div>
   )
 }

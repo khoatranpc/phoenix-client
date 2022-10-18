@@ -1,0 +1,44 @@
+div.form-forgotpassword {
+    padding-top: 50px;
+    flex: 1;
+
+    h3 {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: bolder;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    div.form {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        form {
+            flex: 0.5;
+
+            label.ant-form-item-required,
+            label span {
+                color: var(--text);
+            }
+
+            div.ant-form-item-control-input-content {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        div.right-fnc {
+            flex: 0.3;
+        }
+    }
+}

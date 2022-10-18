@@ -1,7 +1,8 @@
-export const CHANGETHEME = 'CHANGETHEME';
-export const ChangeTheme = (payload: string) => {
+import { Action } from "../../Global/interface";
+
+export const changeTheme = (payload: Action) => {
     return {
-        type: CHANGETHEME,
+        type: payload.type,
         payload
     }
 }

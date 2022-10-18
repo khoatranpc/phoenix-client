@@ -1,0 +1,16 @@
+div.container-carousel {
+    div.img-carousel {
+        width: 100vw;
+        img{
+            width: 100vw;
+            height: 40vw;
+            object-fit: cover;
+        }
+       
+    }
+    button{
+        background-color: var(--button-theme) !important;
+    }
+
+
+}
